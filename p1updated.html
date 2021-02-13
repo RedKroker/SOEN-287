@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <link rel="stylesheet" href = "./p1updated.css">
+        <meta charset="utf-8">
+        <title>Home</title>  
+    </head>
+    
+    <body>        
+        <!-- Container -->
+        <div class = "borderDiv">
+
+             <!-- This is a header division -->
+            <div class="header">
+                <div class="logo">Grocery</div>                
+                <div class="cart_and_accont">
+                    <div class="cart">
+                        <img src="./icons/shopping-cart.svg" height="18px" width="18px">
+                        <span><a href="cartt.html">Cart</a></span>
+                    </div>   
+                    <div class="Account">
+                        <img src="./icons/icons8-user-account-26.png" height="18px" width="18px">
+                        <span><a href="account.html">Account</a></span>
+                    </div>  
+                </div>                                   
+            </div>
+            
+            <!-- This is the division for navagation bar -->
+            <nav class = "navbar">                
+            <!--Home brings us back to main page -->
+                <a href="banner.html">Home</a>                
+
+            <!--A class to distinguish drop down Aisle in menu bar -->
+                <div class="dropdown">
+                    <div class="dropbutton">Aisle</div>
+                    <div class="dropdown-content">
+                        <a href="aisle1.html">Meats</a>
+                        <a href="aisle2.html">Fruits and Vegetables</a>
+                        <a href="aisle3.html">Cutlery</a>
+                        <a href="aisle4.html">Grains and Nut</a>
+                        <a href="aisle5.html">Candy</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- This is the Opening Message bar -->
+            <div class="openingMessage">   
+                <div class="pictures">
+                    <div class="picture"></div>
+                </div>                 
+                <div class="opening"><span class="one">BONJOUR</span>/<span class="two">HELLO!</span></div>
+                <div class="subOpening">Welcome to our online grocery store! Please create an account if you are not already signed in, and lets begin shopping!</div>                
+            </div>
+            
+            <!-- Corousel Slides-->
+            <div class="middle">
+                <div class="middle-container">
+                    <div class="carousel">
+                        <ul class="list-container">
+                            <li class="list currentSlide first">
+                                <img src="https://www.foodiesfeed.com/wp-content/uploads/2017/07/food-1.jpg" class="list-pic">     
+                                <pre class="texts">
+Fruits 
+and 
+Vegetables</pre>                                                                                                     
+                            </li>
+                            <li class="list second">
+                                <img src="https://www.foodiesfeed.com/wp-content/uploads/2019/05/colorful-healthy-fresh-berries-in-a-cup-1.jpg" class="list-pic">  
+                                <pre class="texts">
+SeaFood
+and
+Fish</pre>                       
+                            </li> 
+                            <li class="list third">
+                                <img src="https://www.foodiesfeed.com/wp-content/uploads/2021/01/beets-at-the-farmers-market.jpg" class="list-pic"> 
+                                <pre class="texts">
+Candy</pre>                       
+                            </li>
+                            <li class="list fourth">
+                                <img src="https://www.foodiesfeed.com/wp-content/uploads/2019/02/fresh-watermelon-close-up.jpg" class="list-pic">  
+                                <pre class="texts">
+Dairy</pre>                       
+                            </li>
+                            <li class="list fifth">
+                                <img src="https://www.foodiesfeed.com/wp-content/uploads/2018/02/raw-beef-meat.jpg" class="list-pic">
+                                <pre class="texts">
+Meats</pre>                       
+                            </li>
+                        </ul> 
+                    </div>                 
+                </div>               
+    
+                <div class="middle-container-gradient"></div>
+
+                <div class="middleText">
+                    <pre class="middletexts">
+PLENTY AISLES TO 
+CHOOSE FROM!        </pre>
+                </div>                
+                
+                <div class="button-container">
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="cursors"></div>
+                </div>            
+                
+            </div>
+
+            <!-- Footer-->
+            <div class="footer">
+
+                <div class="section">
+                    <div class="title">Grocery</div>
+                    <img src="./icons/shopping-bag.svg" height="158px" width="158px">
+                </div>
+
+                <div class="section">
+                    <div class="member-title">Group Members</div>
+                    <div class="members">
+                        <ul class="member-list">
+                            <li>Annika Timermanis</li>
+                            <li>Orange</li>
+                            <li>Ohuess</li>
+                            <li>Axel Solano</li>
+                            <li>Jahrel Stewart</li>
+                            <li>Charles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="contact-title">Contact</div>
+                    <ul class="contact-list">
+                        <li>XXX-XXX-XXXX</li>
+                        <li>XXXX@gmail.com</li>                                               
+                    </ul>                    
+                  
+                </div>
+            </div> 
+                    
+        </div>    
+            
+        <script src="./carousel.js"></script>  
+    </body>
+    
+    
+</html>
+
+<!-- 
+            <div class = "FoodCategories">
+                <p id = "message">Browse our food categories</p>
+            </div>
+            
+            <div class = "background">
+            <a href="aisle1.html" style="color: black">
+                <div class = "fruits">
+                    <h1>Fresh Fruits and Vegetables</h1>
+                    <img src = "./images/jordan-christian-TS2_ti0J1w8-unsplash.jpg" style="width:100%;height:250px;" >
+                    <h2>Healthy and organic fruits and veggies.</h2>
+                    <h3 id = "aisles">Aisle 1</h3>
+                </div>
+            </a>
+           
+            <a href="#aisle2.html" style="color: black">
+                <div class = "meat">
+                    <h1>Meat and Cold Cuts</h1>
+                    <img src = "./images/jez-timms-DVRXFIH42d0-unsplash.jpg" style="width:100%;height:250px;" >
+                    <h2>Great selection for meat lovers.</h2>
+                    <h3 class="aisles">Aisle 2</h3>
+                </div>
+            </a>
+           
+            <a href="#aisle3.html" style="color: black">
+                 <div class = "dairy">
+                    <h1>Dairy and Starch products </h1>
+                     <img src = "./images/eiliv-sonas-aceron-_8bnn1GqX70-unsplash.jpg" style="width:100%;height:250px;" >
+                    <h2>Milk eggs and more.</h2>
+                    <h3 class="aisles">Aisle 3</h3>
+                 </div>
+            </a>
+            </div>
+            -->
