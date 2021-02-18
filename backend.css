@@ -1,0 +1,197 @@
+html{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #FBFCFF;
+    font-family: Verdana , sans-serif;
+
+}
+.BEheader{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: #223843;
+  top: 0;
+
+}
+.logo{
+  position: absolute;
+  left: 25px;
+  font-size: 28px;
+
+}
+.logo a{
+
+  color: #FBFCFF;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-right: 1px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mainGrid{
+  display: grid;
+  grid-auto-columns: column;
+  grid-template-columns: 200px 1000px;
+  height: 925px;
+  gap: 10px;
+}
+.sideBar{
+  grid-column-start: 1;
+  position: relative;
+  height: 100%;
+  background-color: white;
+
+}
+.NavCard{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.NavCard a {
+  font-size: 20px;
+  color: #223843;
+  padding: 12px 15px 12px 10px;
+  display: block;
+  text-align: left;
+  border-radius: 5%;
+  text-decoration: none;
+}
+.NavCard a:hover{
+  cursor: pointer;
+  color: #68B0AB;
+}
+
+
+.BEmain{
+  grid-column-start: 2;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.productForm{
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.productForm input{
+  height: 30px;
+  padding: 2px;
+  font-style: italic;
+  border-radius: 3px;
+  border: 2px solid #ccc;
+}
+.p8Buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.p8Buttons button{
+  background-color: #223843;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.productsTable{
+  margin-left: 10px;
+  margin-top: 10px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.productsTable th , td{
+  position: relative;
+  padding: 20px 20px;
+  border-collapse: collapse;
+  border: 1px solid rgba(0,0,0,.125);
+  text-align: center;
+}
+
+.p7Buttons{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+  width: 80%;
+}
+
+.p7Buttons a{
+  background-color: #223843;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+
+.BEfooter{
+  position: relative;
+  width: 100%;
+  height: 75px;
+  background-color: #223843;
+  bottom: 0;
+
+}
+
+/*
+.header{
+  grid-row-start: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  justify-self: center;
+  background-color: transparent;
+}
+
+.header .logo{
+  font-size: 38px;
+  font-family: 'Amaranth', sans-serif;
+}
+
+
+.footer{
+  grid-row-start: 5;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  color: #EDDDD4;
+  background-color: #223843;
+}
+*/
