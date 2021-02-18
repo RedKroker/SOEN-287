@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #FBFCFF;
+}
+
+.borderDiv {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 70px 45px 600px 350px;
+    gap: 10px;
+    width: 100%;
+    color: #223843;
+}
+
+.header {
+    grid-row-start: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    justify-self: center;
+    background-color: transparent;
+}
+
+.header .logo {
+    font-size: 38px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.header .cart_and_accont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 180px;
+    font-family: 'Staatliches', cursive;
+}
+
+.header .cart_and_accont .cart a {
+    color: #223843;
+    font-size: 20px;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.header .cart_and_accont .cart a:hover {
+    cursor: pointer;
+    color: #68B0AB;
+}
+
+.header .cart_and_accont .Account a {
+    color: #223843;
+    font-size: 20px;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.header .cart_and_accont .Account a:hover {
+    cursor: pointer;
+    color: #68B0AB;
+}
+
+/* Navbar container */
+.navbar {
+    grid-row-start: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 97%;
+    justify-self: center;
+    font-family: 'Staatliches', cursive;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    font-size: 20px;
+    color: #223843;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    margin-left: 40px;
+}
+
+/* Dropdown button */
+.dropdown .dropbutton {
+    font-size: 20px;
+    color: #223843;
+    font-family: inherit;
+}
+
+/* Add a green background color to navbar links on hover */
+.navbar a:hover,
+.dropbutton {
+    color: #68B0AB;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    /*inline, block, inline-block*/
+    position: absolute;
+    /*static, relative, fixed, absolute, sticky*/
+    background-color: #f9f9f9;
+    width: max-content;
+    left: -10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    z-index: 1;
+    /*image infront or behind text*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 20px;
+    color: #223843;
+    padding: 12px 15px 12px 10px;
+    display: block;
+    text-align: left;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #EDDDD4;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /*inline, none, block, inline-block*/
+}
+
+.middle {
+    grid-row-start: 3;
+    position: relative;
+    background-color: transparent;
+}
+
+.directory .message {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Suez One', serif;
+}
+
+.directory .innerAisle {
+    font-family: 'Overlock', cursive;
+    font-size: 20px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.product_and_description {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    width: 100%;
+}
+
+.product_and_description .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 20px 12px #d3d3d3);
+}
+
+.picture-container {
+    margin-right: 20px;
+}
+
+.description {
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.align {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Overlock', cursive;
+}
+
+.align .row {
+    font-family: 'Overlock', cursive;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 0px 10px 10px;
+}
+
+.align .row span {
+    text-decoration: underline;
+}
+
+.align .row:nth-child(1) {
+    font-size: 35px;
+    color: #223843;
+}
+
+.align .row:nth-child(1) span {
+    font-size: 16px;
+}
+
+.align .row:nth-child(2) {
+    font-size: 35px;
+    color: #D05353;
+}
+
+.align .row:nth-child(2) span {
+    font-size: 16px;
+    color: #223843;
+}
+
+.align .row:nth-child(3) {
+    width: 50%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.align .row:nth-child(3) .input-quantity {
+    position: relative;
+    width: 80px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.align .row:nth-child(3) .input-quantity::-webkit-outer-spin-button,
+.align .row:nth-child(3) .input-quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.align .row:nth-child(3) .plusMinus {
+    position: relative;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #22384371;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+.align .row:nth-child(3) .plusMinus:hover {
+    border: 3px solid #22384371;
+}
+
+.align .row:nth-child(3) .plusMinus:active {
+    transform: scale(0.95);
+}
+
+.align .row:nth-child(4) {
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: 1px solid #22384371;
+    border-radius: 10%;
+    transition: background 50ms ease-in-out, transform 150ms ease;
+}
+
+.align .row:nth-child(4):active {
+    transform: scale(0.95);
+}
+
+.align .row:nth-child(4):hover {
+    cursor: pointer;
+    background-color: #68B0AB;
+}
+
+.align .row:nth-child(5) {
+    position: relative;
+    align-self: flex-start;
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: 0.6;
+    border: none;
+    transition: opacity 100ms;
+}
+
+.align .row:nth-child(5):hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.smallCarousel {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    margin-left: 800px;
+    border-radius: 5%;
+    font-family: 'Overlock', cursive;
+    background-color: white;
+    transition: margin-left 400ms ease-out;
+}
+
+.smallCarousel .goBack {
+    align-self: flex-start;
+    justify-self: flex-start;
+    position: absolute;
+    background-image: url("\\icons\\right-arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+.smallCarousel .goBack:hover {
+    cursor: pointer;
+}
+
+.smallCarousel .detail {
+    font-size: 20px;
+    width: 85%;
+    text-align: center;
+}
+
+
+.footer {
+    grid-row-start: 4;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    color: #EDDDD4;
+    background-color: #223843;
+}
+
+.footer .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .section:nth-child(1) {
+    font-size: 38px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.footer .section:nth-child(1) img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(105%) contrast(104%);
+}
+
+.footer .section:nth-child(2) {
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+}
+
+.footer .section:nth-child(2) .member-title {
+    text-decoration: underline;
+}
+
+.footer .section:nth-child(2) .member-list li {
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+}
+
+.footer .section:nth-child(3) {
+    font-family: 'Staatliches', cursive;
+}
+
+.footer .section:nth-child(3) .contact-title {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.footer .section:nth-child(3) .contact-list li {
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+}
