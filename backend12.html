@@ -1,0 +1,118 @@
+<! DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="backend11.css">
+        <title>Order List</title>
+
+        <!--to hide the input number arrows-->
+        <style>
+            /* Chrome, Safari, Edge, Opera */
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            
+            /* Firefox */
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
+            </style>
+    </head>
+
+    <body>
+        <div class="BEheader">
+            <div class="logo">
+                <a href="backEnd7.html">T.B.G.S</a>
+            </div>
+        </div>
+
+        <div class="mainGrid">
+            <div class="sideBar">
+              <div class="NavCard">
+      
+                <a href="#">Dashboard</a>
+                <a href="backEnd7.html">Products</a>
+                <a href="#">Accounts</a>
+                <a href="backend11.html">Orders</a>
+      
+                </div>
+              </div>
+        
+        <div class="BEmain">
+            <div class = "orderForm">
+                <h1>Order Editor</h1>
+                
+                
+                <label for="customerID">Customer ID:</label><br><br>
+                <input 
+                    type="number" min="1" max="9999"
+                    name="customerID"
+                    id="customerID"
+                    placeholder="0000"
+                    maxlength="4"><br><br>
+                <label for="orderDate">Order Date:</label><br><br>
+                <input
+                    type="number"
+                    name="orderDate"
+                    id="orderDate"
+                    pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"
+                    placeholder="YYYY-MM-DD"
+                    maxlength="10"><br><br>
+                <label for="orderStatus">Status</label><br><br>
+                    <select id="orderStatus" name="orderStatus" style="font-family: Amaranth; font-size: 15px;">
+                      <option value="processed">Proccessed</option>
+                      <option value="shipped">Shipped</option>
+                      <option value="enroute">En Route</option>
+                      <option value="arrived">Arrived</option>
+                    </select><br><br>
+                <input type="submit" value="Save">
+                
+
+                
+            </div>
+        </div>
+
+        
+
+        <!--FOOTER
+
+        <div class="footer">
+
+            <div class="section">
+                <div class="title">Grocery</div>
+                <img src="./icons/shopping-bag.svg" height="158px" width="158px">
+            </div>
+
+            <div class="section">
+                <div class="member-title">Group Members</div>
+                <div class="members">
+                    <ul class="member-list">
+                        <li>Annika Timermanis</li>
+                        <li>Orange</li>
+                        <li>Ohuess</li>
+                        <li>Axel Solano</li>
+                        <li>Jahrel Stewart</li>
+                        <li>Charles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="contact-title">Contact</div>
+                <ul class="contact-list">
+                    <li>XXX-XXX-XXXX</li>
+                    <li>XXXX@gmail.com</li>
+                </ul>
+
+            </div>
+        </div> -->
+
+
+    </body>
+
+    </html>
