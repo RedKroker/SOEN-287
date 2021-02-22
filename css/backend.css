@@ -263,28 +263,3 @@ html{
 
 
 
-/*
-.header{
-  grid-row-start: 1;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 97%;
-  justify-self: center;
-  background-color: transparent;
-}
-.header .logo{
-  font-size: 38px;
-  font-family: 'Amaranth', sans-serif;
-}
-.footer{
-  grid-row-start: 5;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  color: #EDDDD4;
-  background-color: #223843;
-}
-*/
