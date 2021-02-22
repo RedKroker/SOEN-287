@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="backend.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Product Editor</title>
   </head>
   <body>
     <!--division for header-->
@@ -47,15 +47,13 @@
               type="name"
               id="name" >
 
-          <label for="price" class="priceLbl">Price</label>
-          <input
-              value="0"
-              name="price"
-              type="number"
-              id="price" >
-
-
-                             <div class="weight">
+       <div class="numbersInput">
+                               <label for="price" class="priceLbl">Price</label>
+                               <input
+                                   value="0"
+                                   name="price"
+                                   type="number"
+                                   id="price" >
                                  <label for="weight" class="weightLbl">Weight</label>
                                  <input
                                       value="0"
@@ -68,13 +66,14 @@
                                     <option value="g">G</option>
                                     <option value="liters">Liters</option>
                                   </select>
+                                  <label for="quantity" class="quantityLbl">Quantity</label>
+                                 <input
+                                     value="1"
+                                     name="quantity"
+                                     type="number"
+                                     id="quantity" >
                                </div>
-           <label for="quantity" class="quantityLbl">Quantity</label>
-          <input
-              value="1"
-              name="quantity"
-              type="number"
-              id="quantity" >
+
 
 
             <label for="productDescription" class="descriptionLbl">Product Description</label>
