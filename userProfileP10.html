@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./backend.css">
+    <meta charset="utf-8">
+    <title>Admin</title>
+  </head>
+  <body>
+
+      <div class="BEheader">
+      <div class="logo">
+        <a href="backEnd7.html">T.B.G.S</a>
+      </div>
+      </div>
+
+      <div class="mainGrid">
+      <div class="sideBar">
+        <div class="NavCard">
+
+          <a href="#">Dashboard</a>
+          <a href="backEnd7.html">Products</a>
+          <a href="#">Accounts</a>
+          <a href="#">Orders</a>
+
+          </div>
+        </div>
+
+    <div class="BEmain">
+		<div class="profile-picture">
+			<img src="./blank-profile.png" class="list-item-image" style="width:200px;">
+			<button class="deleteEditUser" style="position:absolute,left:0px;">Upload</button>
+		</div>	
+			<div class="userForm">
+				<form action="">
+					<h2>Profile Settings </h2>
+					<table class="userTable">
+						<tr>
+						  <td align="right">First Name:</td>
+						  <td align="left"><input type="text" name="firstName" value="user.firstName" autocomplete="off";  /></td>
+						</tr>
+						<tr>
+						  <td align="right">Last Name:</td>
+						  <td align="left"><input type="text" name="lastName" value="user.lastName" autocomplete="off"; /></td>
+						</tr>
+						<tr>
+						  <td align="right">Email:</td>
+						  <td align="left"><input type="text" name="email" value="user.email" autocomplete="off";  /></td>
+						</tr>
+						<tr>
+						  <td align="right">User ID:</td>
+						  <td align="left"><input type="text" name="id" value="user.ID" autocomplete="off" readonly="";/></td>
+						</tr>
+					</table>
+					<input type="submit" value="Save" id="saveUserData" style="float:right;"/>
+			</form>
+		</div>	
+	</div>
+
+
+  </body>
+</html>

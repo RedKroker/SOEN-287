@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./backend.css">
+    <meta charset="utf-8">
+    <title>Admin</title>
+  </head>
+  <body>
+
+      <div class="BEheader">
+      <div class="logo">
+        <a href="backEnd7.html">T.B.G.S</a>
+      </div>
+      </div>
+
+      <div class="mainGrid">
+      <div class="sideBar">
+        <div class="NavCard">
+
+          <a href="#">Dashboard</a>
+          <a href="backEnd7.html">Products</a>
+          <a href="#">Accounts</a>
+          <a href="#">Orders</a>
+
+          </div>
+        </div>
+
+      <div class="BEmain">
+        <div class="log">
+            <div class="UserList" action="">
+				<form action="">
+					<label for="sort">Sort by:</label>
+					<select  style="width:100px;" onchange="this.form.submit()">
+						<option value="ID">ID</option>
+						<option value="First Name">First Name</option>
+						<option value="Last Name">Last Name</option>
+					</select>
+				</form>
+				<a href="userProfile.html"><button class="addUser">Add User</button></a>
+                <ul class="list">
+                    <li class="list-item">
+                        <div>
+                          <img src="./blank-profile.png" class="list-item-image">
+                        </div>
+                        <div class="list-item-content">
+							<h4>Master Shredder</h4>
+							<p>ID: 000001</p>
+							<a href="userProfile.html"><button class="deleteEditUser">Edit User</button></a>
+							 <button class="deleteEditUser">Delete User</button>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div>
+                            <img src="./blank-profile.png"  class="list-item-image">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>{{user.name}}</h4>
+                            <p>{{user.ID}}</p>
+							<a href="userProfile.html"><button class="deleteEditUser">Edit User</button></a>
+							<button class="deleteEditUser">Delete User</button>
+                        </div>
+                    </li>
+					<li class="list-item">
+                        <div>
+                            <img src="./blank-profile.png"  class="list-item-image">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>{{user.name}}</h4>
+                            <p>{{user.ID}}</p>
+							<a href="userProfile.html"><button class="deleteEditUser">Edit User</button></a>
+							<button class="deleteEditUser">Delete User</button>
+                        </div>
+                    </li>
+                </ul>
+			</div>
+      </div>
+</div>
+
+      <div class="BEfooter">
+
+      </div>
+
+
+  </body>
+</html>
