@@ -96,6 +96,14 @@ html{
   border-radius: 3px;
   border: 2px solid #ccc;
 }
+.numbersInput{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 25%;
+}
+.numbersInput input,label{margin-top: 7px;}
+.numbersInput select{width: 30%; margin-top: 10px}
 .p8Buttons{
   display: flex;
   flex-direction: row;
