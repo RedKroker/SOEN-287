@@ -167,6 +167,102 @@ html{
 
 }
 
+.addUser {
+  background-color: #223843;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 10%;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.deleteEditUser {
+  background-color: #223843;
+  border: none;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.profile-picture {
+	width:350px;
+	float:left;
+}
+
+
+.userForm {
+	float:center;
+}
+
+.userTable input {
+  padding: 2px;
+  font-style: italic;
+  border-radius: 3px;
+  border: 2px solid #ccc;
+}
+
+#saveUserData {
+  background-color: #223843;
+  border: none;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.userTable td {
+	border:0;
+}
+
+.list-item-image{
+	border-radius: 50%;
+    width: 64px;
+	margin:10px;
+}
+
+.list-item-content{
+	padding-right: 20px;
+}
+
+.list {
+  background: $white;
+  border-radius: 2px;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.list-item {
+  display: flex;
+  margin: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  &:last-child {
+    border-bottom: none;
+  }
+
+
+
 /*
 .header{
   grid-row-start: 1;
@@ -178,13 +274,10 @@ html{
   justify-self: center;
   background-color: transparent;
 }
-
 .header .logo{
   font-size: 38px;
   font-family: 'Amaranth', sans-serif;
 }
-
-
 .footer{
   grid-row-start: 5;
   position: relative;
