@@ -1,171 +1,257 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+html {
     margin: 0;
     padding: 0;
     overflow: auto;
     background-color: #FBFCFF;
-    font-family: Verdana , sans-serif;
+}
 
+.BEheader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: #223843;
+    font-family: 'Amaranth', sans-serif;
 }
-.BEheader{
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 75px;
-  background-color: #223843;
-  top: 0;
 
+.logo {
+    margin-left: 25px;
+    font-size: 35px;
 }
-.logo{
-  position: absolute;
-  left: 25px;
-  font-size: 28px;
 
+.logo a {
+    color: #FBFCFF;
+    text-decoration: none;
 }
-.logo a{
 
-  color: #FBFCFF;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin-right: 1px;
-  text-decoration: none;
-  white-space: nowrap;
+.mainGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
-.mainGrid{
-  display: grid;
-  grid-auto-columns: column;
-  grid-template-columns: 200px 1000px;
-  height: 925px;
-  gap: 10px;
-}
-.sideBar{
-  grid-column-start: 1;
-  position: relative;
-  height: 100%;
-  background-color: white;
 
+.sideBar {
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: white;
+    width: 200px;
 }
-.NavCard{
-    position: relative;
-    top: 10px;
+
+.NavCard {
     display: flex;
     flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    justify-content: space-evenly;
+    height: 50%;
 }
+
 .NavCard a {
-  font-size: 20px;
-  color: #223843;
-  padding: 12px 15px 12px 10px;
-  display: block;
-  text-align: left;
-  border-radius: 5%;
-  text-decoration: none;
-}
-.NavCard a:hover{
-  cursor: pointer;
-  color: #68B0AB;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    color: #223843;
+    text-decoration: none;
 }
 
-
-.BEmain{
-  grid-column-start: 2;
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.productForm{
-  position: absolute;
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid rgba(0,0,0,.125);
-}
-.productForm input{
-  height: 30px;
-  padding: 2px;
-  font-style: italic;
-  border-radius: 3px;
-  border: 2px solid #ccc;
-}
-.p8Buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.p8Buttons button{
-  background-color: #223843;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
-  width: 200px;
+.NavCard a:hover {
+    cursor: pointer;
+    color: #68B0AB;
 }
 
-.productsTable{
-  margin-left: 10px;
-  margin-top: 10px;
-  border-spacing: 0px;
-  border-collapse: collapse;
-  width: 80%;
+.BEmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 40px 0px;
+    width: 100%;
 }
 
-.productsTable th , td{
-  position: relative;
-  padding: 20px 20px;
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,.125);
-  text-align: center;
+.productsTable {
+    border-collapse: collapse;
+    width: 80%;
+    font-family: 'Overlock', cursive;
 }
 
-.p7Buttons{
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 50px;
-  width: 80%;
+.productsTable th,
+td {
+    padding: 20px 20px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    text-align: center;
 }
 
-.p7Buttons a{
-  background-color: #223843;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
-  width: 100%;
+.p7Buttons {
+    font-family: 'Overlock', cursive;
+    margin: 20px 0px 20px 0px;
+    width: 250px;
+    height: 50px;
+    background-color: #223843;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 150ms ease-out;
 }
 
+.p7Buttons:active {
+    transform: scale(0.97);
+}
 
-.BEfooter{
+.p7Buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBFCFF;
+    text-decoration: none;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.productForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    font-family: 'Overlock', cursive;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.productForm h1 {
+    align-self: center;
+    color: #223843;
+}
+
+.productForm input {
+    width: 100%;
+    height: 30px;
+    font-style: italic;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+}
+
+.productForm label {
+    font-weight: bold;
+    align-self: flex-start;
+    margin: 25px 0px 25px 0px;
+}
+
+.p8Buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.p8Buttons button {
+    background-color: #223843;
+    border: none;
+    color: #FBFCFF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .mainGrid {
+        flex-direction: column;
+    }
+
+    .sideBar {
+        width: 100%;
+        height: 200px;
+        padding-left: 0px;
+    }
+
+    .NavCard {
+        text-align: center;
+        height: 100%;
+    }
+
+    .productsTable {
+        width: 100%;
+    }
+}
+
+@media (max-width: 525px) {
+    .tableHeadings {
+        display: none;
+    }
+
+    table,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    tr {
+        border: 1px solid #223843;
+    }
+
+    tr {
+        margin-bottom: 70px;
+    }
+
+    td {
+        position: relative;
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Overlock', cursive;
+    }
+
+    td::before {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        height: 100%;
+        width: 50%;
+        border-right: 1px solid #223843;
+    }
+
+    td:nth-of-type(1):before {
+        content: "ID";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Image";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Name";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Quantity";
+    }
+
+    td:nth-of-type(5):before {
+        content: "";
+    }
+}
+
+/* 
+.BEfooter {
   position: relative;
   width: 100%;
   height: 75px;
   background-color: #223843;
   bottom: 0;
 
-}
+} */
 
 /*
 .header{
